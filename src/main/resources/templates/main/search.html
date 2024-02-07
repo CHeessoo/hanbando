@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+ <head th:replace="~{layout/header::head('검색 결과')}"></head>
+<style>
+   .card {
+      width: 18rem;
+      margin-bottom: 20px;
+  }
+
+  .admin_btn {
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+  .btn-kong {
+    background-color: #96B6C5;
+    color:white;
+      }
+  .card-title {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .btn-outline-kong {
+    color: rgb(23, 62, 104);
+  } 
+  .card-img-top {
+        height: 200px; /* 원하는 카드 이미지 높이 */
+        object-fit: cover; /* 이미지가 카드에 맞게 조절될 수 있도록 설정 */
+        width: 100%; /* 가로 크기를 100%로 설정하여 카드 안에 꽉 차게 함 */
+    }
+  hr {
+    border-top: 1px solid black; /* 두께 조절 가능 */
+    margin: 20px 0; /* 필요에 따라 마진 조절 가능 */
+  }
+  .title {
+	  font-size: 20px;
+	  font-weight: 200;
+  }
+
+/* 호버 상태 */
+.btn-outline-kong:hover {
+    color: #FF8F8F;
+}
+  
+</style>  
+<body>
+
+  <div th:replace="~{layout/header::header}"></div>
+
+  <div class="container text-center">  <!-- 그리드 시작 -->  
+  
+  <div class="row">
+    <div class="col-1">    
+    </div>
+    <div class="col-12">
+      
+      <input type="hidden" id="query" name="query" th:value="${query}">
+      
+      
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+           <li class="nav-item" role="presentation">
+             <button class="nav-link active" id="package-tab" data-bs-toggle="tab" data-bs-target="#package" type="button" role="tab" aria-controls="package" aria-selected="true">패키지</button>
+           </li>
+           <li class="nav-item" role="presentation">
+             <button class="nav-link" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#hotel" type="button" role="tab" aria-controls="hotel" aria-selected="false">호텔</button>
+           </li>
+         </ul>
+         
+         <div class="tab-content" id="myTabContent">
+           <div class="tab-pane fade show active" id="package" role="tabpanel" aria-labelledby="package" tabindex="0">
+               
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top:  25px; ">
+              <div style="display: inline-block;" > 
+               <span id="count"></span>개의 상품
+              </div>
+              <div class="btn-group btn-group-sm" role="group" aria-label="Small button group" style="display: inline-block;">
+                <button type="button" class="btn btn-outline-kong" id="reviewPackage" value="rowPrice">가격낮은순</button>
+                <button type="button" class="btn btn-outline-kong" id="reviewPackage" value="highPrice">가격높은순</button>
+              </div>
+            </div>
+            <hr>
+            <div class="container">
+              <div class="row" id="package_list"> 
+              
+              </div>
+            </div>
+               
+            </div>
+           <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel" tabindex="0">
+                <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 25px;">
+              <div style="display: inline-block;"> 
+               <span id="hotelCount"></span>개의 상품
+              </div>
+              <div class="btn-group btn-group-sm" role="group" aria-label="Small button group" style="display: inline-block;">
+                <button type="button" class="btn btn-outline-kong" id="reviewHotel" value="1">가격낮은순</button>
+                <button type="button" class="btn btn-outline-kong" id="reviewHotel" value="2">가격높은순</button>
+              </div>
+            </div>
+            <hr>
+            <div class="container">
+              <div class="row" id="hotel_list"> 
+                
+              </div>
+            </div>
+               
+            </div>
+         </div>
+      
+    </div>
+    <div class="col-1">      
+    </div>
+  </div>
+  </div>
+      
+<script th:inline="javascript">
+  let key = '${param.key}';
+      console.log(key);
+      if (key === 'package') {
+        $('#hotel-tab').removeClass('active');
+        $('#package-tab').addClass('active');
+
+        $('#hotel').removeClass('show active');
+        $('#package').addClass('show active');
+      } else if (key === 'hotel') {
+        $('#package-tab').removeClass('active');
+        $('#hotel-tab').addClass('active');
+
+        $('#package').removeClass('show active');
+        $('#hotel').addClass('show active');
+      }
+  
+   // 전역 변수
+    var page = 1;
+    var totalPage = 0;
+    var param = 0;
+    
+  
+    
+    
+     var product = $('#package-tab').text();
+     $('#package-tab').click(() => {
+        product = $('#package-tab').text(); 
+        
+     }); 
+     
+     $('#hotel-tab').click(() => {
+     }); 
+     
+    $('.btn-outline-kong').click(function(){
+    param = $(this).val();
+    page = 1;
+    totalPage = 0;
+     $('#package_list').empty();
+     fnsearchPackageList(param);
+  	})    
+    
+   const fnsearchPackageList = (param) => {
+     let query=$('#query').val();
+      $.ajax({
+        type: 'get',
+        url: '/main/searchPackage.do', 
+        data: {page : page, condition : param, query : query},
+        dataType: 'json',
+        success: (resData) => {  
+					$('#count').empty();
+          $('#count').append(resData.count);
+          totalPage = resData.totalPage;    
+              console.log(resData)       
+          if (resData.searchPackageList != null && resData.searchPackageList.length > 0) {
+            var address = '/package/increseHit.do?packageNo=';
+            $.each(resData.searchPackageList, (i, package) => {    
+          let str = '<div class="col-md-3 mb-3">';
+          str += `<div class="card w-100" style="height: 370px;" onclick="location.href='${address}${package.packageNo}'">`;
+          str += `<img src="${package.productImageDto.imagePath}/${package.productImageDto.filesystemName}" class="card-img-top" style="height: 200px;" alt="Package Image">`;
+          str += '<div style="margin-top: 15px;">'; // 수정된 부분: 간격 조절
+          str += '<div class="d-flex align-items-end" style="margin-left: 10px;">'; // 수정된 부분: 스타일 적용 부분 변경
+          str += `<span class="badge rounded-pill text-bg-success">${package.miniOne}</span>`;
+          str += `<span class="badge rounded-pill text-bg-warning">${package.miniTwo}</span>`;
+          str += `<span class="badge rounded-pill text-bg-info">${package.miniThree}</span>`;
+          str += '</div>';
+          str += '</div>';
+          // 내용 부분
+          str += `<div class="card-body d-flex flex-column justify-content-between" style="height: 200px;">`; // 수정된 부분: height를 줄임
+          str += `<p class="card-title">${package.packageTitle}</p>`;
+          str += '<div style="margin-bottom: 20px; margin-right:15px; text-align: right;">';
+          str += `<p class="card-text mb-0" >~${package.price}원</p>`; // 수정된 부분: 텍스트를 오른쪽으로 이동
+          str += '</div>';
+          str += '</div>';
+          str += '</div>';
+          str += '</div>';
+              $('#package_list').append(str);
+              })
+              
+          } else if(resData.searchPackageList == 0) {            
+           $('#package_list').append("검색 결과가 없습니다.") ;
+          }  
+        }
+      });
+      
+    };
+  
+   $('.btn-outline-kong').click(function(){
+    param = $(this).val();
+    page = 1;
+    totalPage = 0;
+     $('#hotel_list').empty();
+     fnsearchHotelList(param);
+  	})    
+  
+  
+  
+   const fnsearchHotelList = (param) => {
+   let query=$('#query').val();
+    $.ajax({
+      type: 'get',
+      url: '/main/searchHotel.do', 
+      data: {page : page, query : query, condition:param},
+      dataType: 'json',
+      success: (resData) => {  
+				$('#hotelCount').empty();
+        $('#hotelCount').append(resData.count);
+        totalPage = resData.totalPage;    
+        if (resData.searchHotelList != null && resData.searchHotelList.length > 0) {
+          if(product === '패키지'){  
+          var address = '/hotel/increseHit.do?hotelNo=';
+          $.each(resData.searchHotelList, (i, hotel) => {           
+            let str = '<div class="col-md-3 mb-3">';
+            str += '<div class="card w-100" style="height: 370px;" onclick="location.href=\''+address+hotel.hotelNo + '\'">';
+            str += '<img src="'+ hotel.hotelImageDto.imagePath +'/'+ hotel.hotelImageDto.filesystemName +'" style="height: 200px;" class="card-img-top" alt="Package Image">';
+            str += '<div class="card-body">'; // 내용의 높이를 일정하게 조절
+            str += '<p class="card-title">' + hotel.hotelName + '</p>';
+            str += '<p class="card-text" style="margin-bottom:20px;">최저 '+resData.price[i] +'원 부터~</p>';
+            str += '<p class="card-text"></p>';          
+            str += '</div>';
+            str += '</div>';
+            str += '</div>';
+            $('#hotel_list').append(str);
+            })
+          }
+        } else if(resData.searchHotelList == 0) {
+         $('#hotel_list').append("검색 결과가 없습니다.") ;
+        }
+      },
+      error: (error) => {
+        console.error('Ajax 요청 에러:', error);
+      }
+    });
+    
+  };
+  
+
+  const fnScroll = () => {
+        var timerId;  // 최초 undefined 상태
+        $(window).on('scroll', () => {
+          if(timerId) {  // timerId가 undefined이면 false로 인식, timerId가 값을 가지면 true로 인식
+            clearTimeout(timerId);
+          }
+          timerId = setTimeout(() => {  // setTimeout 실행 전에는 timerId가 undefined 상태, setTimeout이 한 번이라도 동작하면 timerId가 값을 가짐
+              let scrollTop = $(window).scrollTop();     // 스크롤바 위치(스크롤 된 길이)
+              let windowHeight = $(window).height();     // 화면 전체 크기
+              let documentHeight = $(document).height(); // 문서 전체 크기
+              if((scrollTop + windowHeight + 100) >= documentHeight) {  // 스크롤이 바닥에 닿기 100px 전에 true가 됨
+                if(page > totalPage){  // 마지막 페이지를 보여준 이후에 true가 됨
+                  return;              // 마지막 페이지를 보여준 이후에는 아래 코드를 수행하지 말 것 
+                }
+                page++;
+                fnsearchHotelList(param);
+                fnsearchPackageList(param);  
+                
+              }
+          }, 200);  // 200밀리초(0.2초) 후 동작(시간은 임의로 조정 가능함)
+        })
+    }
+    
+  
+  fnsearchHotelList(param);
+  fnsearchPackageList(param);
+  fnScroll();
+  
+</script>      
+      
+
+
+    <div th:replace="~{layout/footer::footer}"></div>
+
+ 
+</body>
+</html>
