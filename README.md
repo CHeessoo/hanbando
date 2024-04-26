@@ -69,26 +69,25 @@
 
 
 ### 메인 페이지
->- 메인 페이지에서 캐러셀을 이용하여 최대 3개의 배너를 보여준다. 
->- 배너를 클릭하면 링크이동을 할 수 있다.
->- 관리자 페이지에서 배너 사진을 등록하고 링크 주소를 변경 할 수 있다. 
->- 패키지 상품을 예약순이 많은 순서대로 4개 베스트 패키지 기획전으로 보여준다.
->- 테마 별 패키지를 무작위로 골라서 보여준다.
->
->><img width="815" alt="한반도메인-최종" src="https://github.com/CHeessoo/hanbando/assets/131851529/415707fb-95aa-4c47-809c-0cf1c7a17bfc">
+- 메인 페이지에서 캐러셀을 이용하여 최대 3개의 배너를 보여준다. 
+- 배너를 클릭하면 링크이동을 할 수 있다.
+- 관리자 페이지에서 배너 사진을 등록하고 링크 주소를 변경 할 수 있다. 
+- 패키지 상품을 예약순이 많은 순서대로 4개 베스트 패키지 기획전으로 보여준다.
+- 테마 별 패키지를 무작위로 골라서 보여준다.
+<img width="815" alt="한반도메인-최종" src="https://github.com/CHeessoo/hanbando/assets/131851529/415707fb-95aa-4c47-809c-0cf1c7a17bfc">
 
 <br/>
 
 ### 로그인 / 회원가입 / 마이페이지
->- 사이트 자체 로그인, 네이버와 카카오 API를 사용한 간편 로그인을 구현하였다.
->- cool SMS API를 사용한 문자 인증 서비스를 구현하였다.
->- Daum 우편번호 서비스(Kakao 주소) API를 이용하여 상세 주소 입력 기능을 구현하였다.
->- 회원가입 및 비밀번호 변경 시 정규식을 이용하여 조건을 충족하지 못한 경우 입력된 비밀번호의 사용을 제한한다.
->><img width="942" alt="로그인1" src="https://github.com/CHeessoo/hanbando/assets/131851529/61d12b7a-3f54-4a1b-b8e9-3e6b0292cbc8">
->><img width="929" alt="회원가입1" src="https://github.com/CHeessoo/hanbando/assets/131851529/7c8cf68a-c5b2-4820-9a7c-89af09d4db8b">
->><img width="944" alt="아이디찾기1" src="https://github.com/CHeessoo/hanbando/assets/131851529/c4e62a43-c283-4354-8548-0e4df1328cae">
->><img width="931" alt="비밀번호변경1" src="https://github.com/CHeessoo/hanbando/assets/131851529/52b059f5-3a1c-49b0-8a9b-5bc4f810b10c">
->><img width="908" alt="마이페이지1" src="https://github.com/CHeessoo/hanbando/assets/131851529/1222507d-ad0b-4723-8cc4-5196909bbf0f">
+- 사이트 자체 로그인, 네이버와 카카오 API를 사용한 간편 로그인을 구현하였다.
+- cool SMS API를 사용한 문자 인증 서비스를 구현하였다.
+- Daum 우편번호 서비스(Kakao 주소) API를 이용하여 상세 주소 입력 기능을 구현하였다.
+- 회원가입 및 비밀번호 변경 시 정규식을 이용하여 조건을 충족하지 못한 경우 입력된 비밀번호의 사용을 제한한다.
+<img width="942" alt="로그인1" src="https://github.com/CHeessoo/hanbando/assets/131851529/61d12b7a-3f54-4a1b-b8e9-3e6b0292cbc8">
+<img width="929" alt="회원가입1" src="https://github.com/CHeessoo/hanbando/assets/131851529/7c8cf68a-c5b2-4820-9a7c-89af09d4db8b">
+<img width="944" alt="아이디찾기1" src="https://github.com/CHeessoo/hanbando/assets/131851529/c4e62a43-c283-4354-8548-0e4df1328cae">
+<img width="931" alt="비밀번호변경1" src="https://github.com/CHeessoo/hanbando/assets/131851529/52b059f5-3a1c-49b0-8a9b-5bc4f810b10c">
+<img width="908" alt="마이페이지1" src="https://github.com/CHeessoo/hanbando/assets/131851529/1222507d-ad0b-4723-8cc4-5196909bbf0f">
 
 
 <br/>
