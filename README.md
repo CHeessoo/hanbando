@@ -69,91 +69,91 @@
 
 
 ### 메인 페이지
-- 메인 페이지에서 캐러셀을 이용하여 최대 3개의 배너를 보여준다. 
-- 배너를 클릭하면 링크이동을 할 수 있다.
-- 관리자 페이지에서 배너 사진을 등록하고 링크 주소를 변경 할 수 있다. 
-- 패키지 상품을 예약순이 많은 순서대로 4개 베스트 패키지 기획전으로 보여준다.
-- 테마 별 패키지를 무작위로 골라서 보여준다.
-
-<img width="815" alt="한반도메인-최종" src="https://github.com/CHeessoo/hanbando/assets/131851529/415707fb-95aa-4c47-809c-0cf1c7a17bfc">
+>- 메인 페이지에서 캐러셀을 이용하여 최대 3개의 배너를 보여준다. 
+>- 배너를 클릭하면 링크이동을 할 수 있다.
+>- 관리자 페이지에서 배너 사진을 등록하고 링크 주소를 변경 할 수 있다. 
+>- 패키지 상품을 예약순이 많은 순서대로 4개 베스트 패키지 기획전으로 보여준다.
+>- 테마 별 패키지를 무작위로 골라서 보여준다.
+>
+>><img width="815" alt="한반도메인-최종" src="https://github.com/CHeessoo/hanbando/assets/131851529/415707fb-95aa-4c47-809c-0cf1c7a17bfc">
 
 <br/>
 
 ### 로그인 / 회원가입 / 마이페이지
-- 사이트 자체 로그인, 네이버와 카카오 API를 사용한 간편 로그인을 구현하였다.
-- cool SMS API를 사용한 문자 인증 서비스를 구현하였다.
-- Daum 우편번호 서비스(Kakao 주소) API를 이용하여 상세 주소 입력 기능을 구현하였다.
-- 회원가입 및 비밀번호 변경 시 정규식을 이용하여 조건을 충족하지 못한 경우 입력된 비밀번호의 사용을 제한한다.
-<img width="942" alt="로그인1" src="https://github.com/CHeessoo/hanbando/assets/131851529/61d12b7a-3f54-4a1b-b8e9-3e6b0292cbc8">
-<img width="929" alt="회원가입1" src="https://github.com/CHeessoo/hanbando/assets/131851529/7c8cf68a-c5b2-4820-9a7c-89af09d4db8b">
-<img width="944" alt="아이디찾기1" src="https://github.com/CHeessoo/hanbando/assets/131851529/c4e62a43-c283-4354-8548-0e4df1328cae">
-<img width="931" alt="비밀번호변경1" src="https://github.com/CHeessoo/hanbando/assets/131851529/52b059f5-3a1c-49b0-8a9b-5bc4f810b10c">
-<img width="908" alt="마이페이지1" src="https://github.com/CHeessoo/hanbando/assets/131851529/1222507d-ad0b-4723-8cc4-5196909bbf0f">
+>- 사이트 자체 로그인, 네이버와 카카오 API를 사용한 간편 로그인을 구현하였다.
+>- cool SMS API를 사용한 문자 인증 서비스를 구현하였다.
+>- Daum 우편번호 서비스(Kakao 주소) API를 이용하여 상세 주소 입력 기능을 구현하였다.
+>- 회원가입 및 비밀번호 변경 시 정규식을 이용하여 조건을 충족하지 못한 경우 입력된 비밀번호의 사용을 제한한다.
+>><img width="942" alt="로그인1" src="https://github.com/CHeessoo/hanbando/assets/131851529/61d12b7a-3f54-4a1b-b8e9-3e6b0292cbc8">
+>><img width="929" alt="회원가입1" src="https://github.com/CHeessoo/hanbando/assets/131851529/7c8cf68a-c5b2-4820-9a7c-89af09d4db8b">
+>><img width="944" alt="아이디찾기1" src="https://github.com/CHeessoo/hanbando/assets/131851529/c4e62a43-c283-4354-8548-0e4df1328cae">
+>><img width="931" alt="비밀번호변경1" src="https://github.com/CHeessoo/hanbando/assets/131851529/52b059f5-3a1c-49b0-8a9b-5bc4f810b10c">
+>><img width="908" alt="마이페이지1" src="https://github.com/CHeessoo/hanbando/assets/131851529/1222507d-ad0b-4723-8cc4-5196909bbf0f">
 
 
 <br/>
   
 ### 패키지 여행 상품
-- 패키지 목록
-- 상세페이지
-<img width="931" alt="패키지목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/dd202382-8dd1-452e-9c19-1b51734600b9">
-<img width="947" alt="패키지상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/7508cb92-356f-4065-9516-49477a4a2632">
+>- 패키지 목록
+>- 상세페이지
+>><img width="931" alt="패키지목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/dd202382-8dd1-452e-9c19-1b51734600b9">
+>><img width="947" alt="패키지상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/7508cb92-356f-4065-9516-49477a4a2632">
 
 <br/>
 
 ### 호텔 예약 상품
-- 호텔 목록
-- 상세페이지
-<img width="752" alt="호텔메인" src="https://github.com/CHeessoo/hanbando/assets/131851529/647c646a-3847-47d9-961e-873bedcefe34">
-<img width="883" alt="호텔상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/6ebfb1f1-4be3-4cc1-af1a-cdb7936321b6">
+>- 호텔 목록
+>- 상세페이지
+>><img width="752" alt="호텔메인" src="https://github.com/CHeessoo/hanbando/assets/131851529/647c646a-3847-47d9-961e-873bedcefe34">
+>><img width="883" alt="호텔상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/6ebfb1f1-4be3-4cc1-af1a-cdb7936321b6">
 
 <br/>
 
 ### 예약하기 기능
-<img width="923" alt="패키지예약1" src="https://github.com/CHeessoo/hanbando/assets/131851529/c66f5283-cdda-446f-83c1-b69fca91c016">
-<img width="951" alt="패키지예약2" src="https://github.com/CHeessoo/hanbando/assets/131851529/389b993b-86da-4f30-bb9d-5e66ace38cc6">
+><img width="923" alt="패키지예약1" src="https://github.com/CHeessoo/hanbando/assets/131851529/c66f5283-cdda-446f-83c1-b69fca91c016">
+><img width="951" alt="패키지예약2" src="https://github.com/CHeessoo/hanbando/assets/131851529/389b993b-86da-4f30-bb9d-5e66ace38cc6">
 
 <br/>
 
 ### 관리자
-- 일반 회원 관리
-  - 관리자는 일반 회원의 상세정보 조회가 가능하며, 수정, 탈퇴가 가능하다.
-  - 관리자 권한으로 비밀번호 변경 시 제한 없이 수정이 가능하다.
-  - 관리자 보기 전용 회원 찜목록 게시판 조회가 가능하다.
-  - Daum 우편번호 서비스(Kakao 주소) API를 이용하여 상세 주소 기능을 구현하였다.
-<img width="855" alt="일반회원관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/0d29533f-da59-4edc-a22d-50f5fad0360a">
-<img width="680" alt="일반회원관리상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/b859ebec-dca6-40f9-a1b2-ea577feead04">
+#### 일반 회원 관리
+>- 관리자는 일반 회원의 상세정보 조회가 가능하며, 수정, 탈퇴가 가능하다.
+>- 관리자 권한으로 비밀번호 변경 시 제한 없이 수정이 가능하다.
+>- 관리자 보기 전용 회원 찜목록 게시판 조회가 가능하다.
+>- Daum 우편번호 서비스(Kakao 주소) API를 이용하여 상세 주소 기능을 구현하였다.
+>><img width="855" alt="일반회원관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/0d29533f-da59-4edc-a22d-50f5fad0360a">
+>><img width="680" alt="일반회원관리상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/b859ebec-dca6-40f9-a1b2-ea577feead04">
 
-- 휴면 회원 관리
-  - 관리자는 휴면 회원 조회가 가능하며 상세정보 확인이 가능하다.
-<img width="740" alt="휴면회원관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/d90ffea9-1127-4064-80b5-a1738160ba9a">
-<img width="658" alt="휴면회원관리상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/ea0c6fbd-69b0-4ac9-b165-c5e48c79348a">
-
-
-- 탈퇴 회원 관리
-  - 관리자는 탈퇴회원 조회가 가능하다.
-<img width="752" alt="탈퇴회원관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/6ba49384-16e5-4195-a29c-9ef2457ad244">
+#### 휴면 회원 관리
+>- 관리자는 휴면 회원 조회가 가능하며 상세정보 확인이 가능하다.
+>><img width="740" alt="휴면회원관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/d90ffea9-1127-4064-80b5-a1738160ba9a">
+>><img width="658" alt="휴면회원관리상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/ea0c6fbd-69b0-4ac9-b165-c5e48c79348a">
 
 
-- 상품 관리(패키지, 호텔)
-  - 관리자는 패키지 여행 상품과 호텔 예약 상품을 상품별로 조회가 가능하며 상세 확인 및 수정이 가능하다.
-<img width="702" alt="패키지상품관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/3b0c91fa-e64e-4557-8313-a51c6621b4b7">
-<img width="652" alt="호텔상품관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/3b5cacc8-82cc-462f-8851-c10026972868">
-<img width="668" alt="호텔상품관리-가격상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/8d712b33-b1ad-471c-9f12-bb6dc25f5087">
+#### 탈퇴 회원 관리
+>- 관리자는 탈퇴회원 조회가 가능하다.
+>><img width="752" alt="탈퇴회원관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/6ba49384-16e5-4195-a29c-9ef2457ad244">
 
 
-- 예약 관리
-  - 관리자는 전체 예약 내역을 조회할 수 있으며 각 예약내역의 상세 확인이 가능하다.
-<img width="855" alt="예약관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/ecb8ec0e-7158-462d-8452-191703e0147a">
-<img width="694" alt="패키지예약상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/c74d408f-5144-4061-818f-01d8f9620150">
-<img width="723" alt="호텔예약상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/5e4d35b0-8b8c-4e7f-8f05-980e49d41998">
+#### 상품 관리(패키지, 호텔)
+>- 관리자는 패키지 여행 상품과 호텔 예약 상품을 상품별로 조회가 가능하며 상세 확인 및 수정이 가능하다.
+>><img width="702" alt="패키지상품관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/3b0c91fa-e64e-4557-8313-a51c6621b4b7">
+>><img width="652" alt="호텔상품관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/3b5cacc8-82cc-462f-8851-c10026972868">
+>><img width="668" alt="호텔상품관리-가격상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/8d712b33-b1ad-471c-9f12-bb6dc25f5087">
+
+
+#### 예약 관리
+>- 관리자는 전체 예약 내역을 조회할 수 있으며 각 예약내역의 상세 확인이 가능하다.
+>><img width="855" alt="예약관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/ecb8ec0e-7158-462d-8452-191703e0147a">
+>><img width="694" alt="패키지예약상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/c74d408f-5144-4061-818f-01d8f9620150">
+>><img width="723" alt="호텔예약상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/5e4d35b0-8b8c-4e7f-8f05-980e49d41998">
 
 
 
-- 리뷰 관리
-  - 관리자는 리뷰를 목록 구성으로 확인이 가능하며 검색, 삭제가 가능하다.
-<img width="692" alt="리뷰관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/c7cf4c7d-df94-4a68-923c-b2a7936511b4">
-<img width="720" alt="리뷰관리상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/9b8260d7-561c-4fe0-8f63-218cc12264ed">
+#### 리뷰 관리
+>- 관리자는 리뷰를 목록 구성으로 확인이 가능하며 검색, 삭제가 가능하다.
+>><img width="692" alt="리뷰관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/c7cf4c7d-df94-4a68-923c-b2a7936511b4">
+>><img width="720" alt="리뷰관리상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/9b8260d7-561c-4fe0-8f63-218cc12264ed">
 
 
 
@@ -161,13 +161,13 @@
 <br/>
 
 ### 고객센터
-- 공지사항 (파일 첨부 가능)
-- 자주 묻는 질문
-- 1:1문의
-<img width="916" alt="공지사항1" src="https://github.com/CHeessoo/hanbando/assets/131851529/7304d2f0-56eb-4a9f-99f9-4e9dfe2edb10">
-<img width="913" alt="공지사항2" src="https://github.com/CHeessoo/hanbando/assets/131851529/23751a9d-4303-4171-8375-118671eca02e">
-<img width="914" alt="공지사항3" src="https://github.com/CHeessoo/hanbando/assets/131851529/79974588-6d72-45e0-805d-cbb0232f93b5">
-<img width="894" alt="공지사항4" src="https://github.com/CHeessoo/hanbando/assets/131851529/1e4587d2-3bb6-429f-a3e5-a5b73b4b49ca">
+>- 공지사항 (파일 첨부 가능)
+>- 자주 묻는 질문
+>- 1:1문의
+>><img width="916" alt="공지사항1" src="https://github.com/CHeessoo/hanbando/assets/131851529/7304d2f0-56eb-4a9f-99f9-4e9dfe2edb10">
+>><img width="913" alt="공지사항2" src="https://github.com/CHeessoo/hanbando/assets/131851529/23751a9d-4303-4171-8375-118671eca02e">
+>><img width="914" alt="공지사항3" src="https://github.com/CHeessoo/hanbando/assets/131851529/79974588-6d72-45e0-805d-cbb0232f93b5">
+>><img width="894" alt="공지사항4" src="https://github.com/CHeessoo/hanbando/assets/131851529/1e4587d2-3bb6-429f-a3e5-a5b73b4b49ca">
 
 
 
