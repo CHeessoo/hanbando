@@ -121,7 +121,7 @@
   - 관리자 권한으로 비밀번호 변경 시 제한 없이 수정이 가능하다.
   - 관리자 보기 전용 회원 찜목록 게시판 조회가 가능하다.
   - Daum 우편번호 서비스(Kakao 주소) API를 이용하여 상세 주소 기능을 구현하였다.
-<img width="863" alt="일반회원관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/61162466-270b-4d68-a315-9b62f363404f">
+<img width="855" alt="일반회원관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/0d29533f-da59-4edc-a22d-50f5fad0360a">
 <img width="680" alt="일반회원관리상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/b859ebec-dca6-40f9-a1b2-ea577feead04">
 
 - 휴면 회원 관리
