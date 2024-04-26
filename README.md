@@ -17,7 +17,7 @@
 - 남궁수민 : 메인배너, 호텔 상품 페이지
 - 김세연 : 패키지여행 페이지, 찜목록
 - 김태준 : 고객센터
-- 나예솜 : 로그인, 회원가입, 마이페이지
+- 나예솜, 심희수수 : 로그인, 회원가입, 마이페이지
 - 심희수 : DB관리 - 관리자 페이지
 - 이종혁 : 예약 페이지
 
@@ -73,6 +73,7 @@
 
 ### 로그인 / 회원가입 / 마이페이지
 - 사이트 자체 로그인, 네이버 API와 카카오 API를 사용한 간편 로그인 구현
+- SMS API를 이용한 문자 인증 구현현
 <img width="942" alt="로그인1" src="https://github.com/CHeessoo/hanbando/assets/131851529/61d12b7a-3f54-4a1b-b8e9-3e6b0292cbc8">
 <img width="929" alt="회원가입1" src="https://github.com/CHeessoo/hanbando/assets/131851529/7c8cf68a-c5b2-4820-9a7c-89af09d4db8b">
 <img width="944" alt="아이디찾기1" src="https://github.com/CHeessoo/hanbando/assets/131851529/c4e62a43-c283-4354-8548-0e4df1328cae">
