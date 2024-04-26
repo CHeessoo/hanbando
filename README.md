@@ -94,21 +94,22 @@
 <br/>
   
 ### 패키지 여행 상품
-- 패키지 목록 조회와 상세페이지를 통한 여행상품 예약 및 리뷰 등록 등의 이용을 할 수 있다.
+- 패키지 목록
+- 상세페이지
 <img width="931" alt="패키지목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/dd202382-8dd1-452e-9c19-1b51734600b9">
 <img width="947" alt="패키지상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/7508cb92-356f-4065-9516-49477a4a2632">
 
 <br/>
 
 ### 호텔 예약 상품
-- 호텔 목록 조회와 상세페이지를 통한 호텔 상품 예약이 가능하다.
+- 호텔 목록
+- 상세페이지
 <img width="752" alt="호텔메인" src="https://github.com/CHeessoo/hanbando/assets/131851529/647c646a-3847-47d9-961e-873bedcefe34">
 <img width="883" alt="호텔상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/6ebfb1f1-4be3-4cc1-af1a-cdb7936321b6">
 
 <br/>
 
 ### 예약하기 기능
-- 예약을 할 수 있는 페이지의 구현현 예시이다.
 <img width="923" alt="패키지예약1" src="https://github.com/CHeessoo/hanbando/assets/131851529/c66f5283-cdda-446f-83c1-b69fca91c016">
 <img width="951" alt="패키지예약2" src="https://github.com/CHeessoo/hanbando/assets/131851529/389b993b-86da-4f30-bb9d-5e66ace38cc6">
 
