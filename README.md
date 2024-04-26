@@ -72,10 +72,10 @@
 <br/>
 
 ### 로그인 / 회원가입 / 마이페이지
-- 사이트 자체 로그인, 네이버와 카카오 API를 사용한 간편 로그인 구현
-- cool SMS API를 사용한 문자 인증 서비스 구현
-- Daum 우편번호 서비스(Kakao 주소) API를 이용하여 상세 주소 입력 기능 구현
-  
+- 사이트 자체 로그인, 네이버와 카카오 API를 사용한 간편 로그인을 구현하였다.
+- cool SMS API를 사용한 문자 인증 서비스를 구현하였다.
+- Daum 우편번호 서비스(Kakao 주소) API를 이용하여 상세 주소 입력 기능을 구현하였다.
+- 회원가입 및 비밀번호 변경 시 정규식을 이용하여, 조건 불충족 시 입력을 제한한다.
 <img width="942" alt="로그인1" src="https://github.com/CHeessoo/hanbando/assets/131851529/61d12b7a-3f54-4a1b-b8e9-3e6b0292cbc8">
 <img width="929" alt="회원가입1" src="https://github.com/CHeessoo/hanbando/assets/131851529/7c8cf68a-c5b2-4820-9a7c-89af09d4db8b">
 <img width="944" alt="아이디찾기1" src="https://github.com/CHeessoo/hanbando/assets/131851529/c4e62a43-c283-4354-8548-0e4df1328cae">
@@ -108,6 +108,9 @@
 ### 관리자
 - 일반 회원 관리
   - 관리자는 일반 회원의 상세정보 조회가 가능하며, 수정, 탈퇴가 가능하다.
+  - 관리자 권한으로 비밀번호 변경 시 제한 없이 수정이 가능하다.
+  - 관리자만 조회가 가능한 회원 찜목록 게시판을 구현하였다.
+  - Daum 우편번호 서비스(Kakao 주소) API를 이용하여 상세 주소 기능을 구현하였다.
 <img width="863" alt="일반회원관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/61162466-270b-4d68-a315-9b62f363404f">
 <img width="680" alt="일반회원관리상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/b859ebec-dca6-40f9-a1b2-ea577feead04">
 
