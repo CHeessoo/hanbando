@@ -61,7 +61,7 @@
 
 ## 구현 서비스
 
-### 간단 개요
+### 간략 개요
 <img width="847" alt="기획문서(서비스개요)-이미지" src="https://github.com/CHeessoo/hanbando/assets/131851529/a622cbbf-c7c7-429c-a492-165f3e1f8eb0">
 
 
