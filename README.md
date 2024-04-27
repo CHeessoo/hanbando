@@ -146,7 +146,7 @@
 
 
 #### 예약 관리
->- 관리자는 전체 예약 내역을 조회할 수 있으며 각 예약내역의 상세 확인이 가능하다.
+>- 관리자는 전체 예약 내역을 원하는 조건별로 조회할 수 있으며 각 예약 내역의 상세 확인이 가능하다.
 >><img width="855" alt="예약관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/ecb8ec0e-7158-462d-8452-191703e0147a">
 >><img width="694" alt="패키지예약상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/c74d408f-5144-4061-818f-01d8f9620150">
 >><img width="723" alt="호텔예약상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/5e4d35b0-8b8c-4e7f-8f05-980e49d41998">
