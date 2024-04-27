@@ -109,6 +109,10 @@
 <br/>
 
 ### 예약하기 기능
+>- 예약페이지
+>- 상세페이지
+>- 결제 기능
+>- 예약 목
 ><img width="923" alt="패키지예약1" src="https://github.com/CHeessoo/hanbando/assets/131851529/c66f5283-cdda-446f-83c1-b69fca91c016">
 ><img width="951" alt="패키지예약2" src="https://github.com/CHeessoo/hanbando/assets/131851529/389b993b-86da-4f30-bb9d-5e66ace38cc6">
 
