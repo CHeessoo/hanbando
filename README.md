@@ -154,7 +154,7 @@
 
 
 #### 리뷰 관리
->- 관리자는 리뷰를 목록 구성으로 확인이 가능하며 검색, 삭제가 가능하다.
+>- 관리자는 리뷰를 목록 구성 방식으로 조회할 수 있고 검색 및 삭제가 가능하다.
 >><img width="692" alt="리뷰관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/c7cf4c7d-df94-4a68-923c-b2a7936511b4">
 >><img width="720" alt="리뷰관리상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/9b8260d7-561c-4fe0-8f63-218cc12264ed">
 
@@ -166,7 +166,7 @@
 ### 고객센터
 >- 공지사항 (파일 첨부 가능)
 >- 자주 묻는 질문
->- 1:1문의
+>- 1:1문의 (답변 여부 미리보기)
 >><img width="916" alt="공지사항1" src="https://github.com/CHeessoo/hanbando/assets/131851529/7304d2f0-56eb-4a9f-99f9-4e9dfe2edb10">
 >><img width="913" alt="공지사항2" src="https://github.com/CHeessoo/hanbando/assets/131851529/23751a9d-4303-4171-8375-118671eca02e">
 >><img width="914" alt="공지사항3" src="https://github.com/CHeessoo/hanbando/assets/131851529/79974588-6d72-45e0-805d-cbb0232f93b5">
