@@ -138,8 +138,8 @@
 >><img width="752" alt="탈퇴회원관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/6ba49384-16e5-4195-a29c-9ef2457ad244">
 
 
-#### 상품 관리(패키지, 호텔)
->- 관리자는 패키지 여행 상품과 호텔 예약 상품을 상품별로 조회가 가능하며 상세 확인 및 수정이 가능하다.
+#### 상품 관리(패키지여행, 호텔)
+>- 관리자는 패키지여행 상품과 호텔 예약 상품을 상품별로 조회가 가능하며 상세 확인 및 수정이 가능하다.
 >><img width="702" alt="패키지상품관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/3b0c91fa-e64e-4557-8313-a51c6621b4b7">
 >><img width="652" alt="호텔상품관리목록" src="https://github.com/CHeessoo/hanbando/assets/131851529/3b5cacc8-82cc-462f-8851-c10026972868">
 >><img width="668" alt="호텔상품관리-가격상세" src="https://github.com/CHeessoo/hanbando/assets/131851529/8d712b33-b1ad-471c-9f12-bb6dc25f5087">
