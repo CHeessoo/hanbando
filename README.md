@@ -166,7 +166,7 @@
 ### 고객센터
 >- 공지사항 (파일 첨부 가능)
 >- 자주 묻는 질문
->- 1:1문의 (답변 여부 미리보기)
+>- 1:1문의 (답변 여부 미리보기로 확인 가능)
 >><img width="916" alt="공지사항1" src="https://github.com/CHeessoo/hanbando/assets/131851529/7304d2f0-56eb-4a9f-99f9-4e9dfe2edb10">
 >><img width="913" alt="공지사항2" src="https://github.com/CHeessoo/hanbando/assets/131851529/23751a9d-4303-4171-8375-118671eca02e">
 >><img width="914" alt="공지사항3" src="https://github.com/CHeessoo/hanbando/assets/131851529/79974588-6d72-45e0-805d-cbb0232f93b5">
